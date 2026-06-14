@@ -73,9 +73,9 @@ const {courseInstructor: inst} = course
 // }
 
 //api format
-[
-    {},
-    {},
-    {},
-]
+// [
+//     {},
+//     {},
+//     {},
+// ]
 
