@@ -25,7 +25,7 @@ const obj4 = {5: "d", 6: "h"}
 // const obj3 = Object.assign({},obj1,obj2,obj4)
 
 const obj3 = {...obj1,...obj2,...obj4} //spread method is best 
-console.log(obj3);
+// console.log(obj3);
 
 const users = [
     {
@@ -42,10 +42,40 @@ const users = [
     }
 ]
 
-console.log(users[0].email);
+// console.log(users[0].email);
 
-console.log(Object.keys(metaUser));
-console.log(Object.values(metaUser));
-console.log(Object.entries(metaUser));
+// console.log(Object.keys(metaUser));
+// console.log(Object.values(metaUser));
+// console.log(Object.entries(metaUser));
 
-console.log(metaUser.hasOwnProperty('isLoggedIn'));
+// console.log(metaUser.hasOwnProperty('isLoggedIn'));
+
+
+const course = {
+    coursename: "js",
+    price: "990",
+    courseInstructor: "jhschb"
+}
+
+const {courseInstructor} = course
+
+const {courseInstructor: inst} = course
+
+// console.log(courseInstructor);
+
+// console.log(inst);
+
+//JSON
+// {
+//     "name": "Shakshi",
+//     "course": "js"
+//     "duration": "1Month"
+// }
+
+//api format
+[
+    {},
+    {},
+    {},
+]
+
