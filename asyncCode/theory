@@ -1,0 +1,9 @@
+blocking code -> block the flow of program -> read fle sync
+non blocking code -> does not block the execution -> read file async
+
+js engine -> call stack and memory heap
+web api(Node) -> browser
+task queue
+
+set timeout -> delay the execution of function for a particular time
+register callback -> keeps track
