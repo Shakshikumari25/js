@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #212121;">
+    <button id="orange">Orange</button>
+    <button id="yellow">yellow</button>
+</body>
+<script>
+    // function init(){
+    //     let name = "Mozilla";
+    //     function displayName(){
+    //         console.log(name);
+    //     }
+    //     return displayName();
+    //     //here whole scope of function is transfered(lexical scope)
+    // }
+    
+    // const myinit = init();
+    // myinit();
+
+    // function outer(){
+    //     let username = "shakshi"
+    //     function inner(){
+    //         let sub = "chemistry";
+    //         console.log("inner", username);
+    //         console.log(sub);
+    //     }
+
+    //     function innerTwo(){
+    //         return username.toUpperCase();
+    //     }
+
+    //     inner();
+    //     console.log(innerTwo());
+    // }
+    // outer();
+    // console.log("outer", username);
+
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = `orange`;
+    // }
+    // document.getElementById("yellow").onclick = function(){
+    //     document.body.style.backgroundColor = `yellow`;
+    // }
+
+    //ALTER WAY
+
+    function clickHandle(color){
+        // document.body.style.backgroundColor = `${color}`;
+
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+
+    }
+
+    document.getElementById("orange").onclick = clickHandle("orange")
+    document.getElementById("yellow").onclick = clickHandle("yellow")
+
+</script>
+</html>
